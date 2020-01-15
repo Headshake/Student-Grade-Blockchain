@@ -69,8 +69,7 @@ class Blockchain(object):
 
     @staticmethod
     def validProof(last_proof, proof):
-        temp = f'{last_proof}{proof}'
-        check = temp.encode()
+        check = f'{last_proof}{proof}'.encode()
         check_hash = hashlib.sha256(check).hexdigest()
 
         return check_hash[:4] == "0000"         #return if the comparison is true
@@ -148,7 +147,13 @@ blockchain = Blockchain()
 
 @webApp.route('/mining', methods=['GET'])
 def mining():
-    #return the next proof through PoW
+    #return the next proo
+    
+    
+    
+    
+    
+    through PoW
     lastBlock = blockchain.last_Block
     lastProof = lastBlock['proof']
     proof = blockchain.PoW(lastProof)
