@@ -69,7 +69,7 @@ class Blockchain(object):
 
     @staticmethod
     def validProof(last_proof, proof):
-        check = f'{last_proof}{proof}'.encode()
+        check = (f'{last_proof}{proof}').encode()
         check_hash = hashlib.sha256(check).hexdigest()
 
         return check_hash[:4] == "0000"         #return if the comparison is true
