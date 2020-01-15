@@ -1,2 +1,2 @@
 # Student-Grade-Blockchain
-store student grade based on blockchain 
+store student grade in the form of blockchain 
